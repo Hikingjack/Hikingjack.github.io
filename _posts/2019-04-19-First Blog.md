@@ -7,7 +7,8 @@ author:     madranger
 header-img: img/home-bg-art.jpg
 catalog: true
 tags:
-    - Blog
+    - PMP
+    - Agile
 ---
 
 #前言
