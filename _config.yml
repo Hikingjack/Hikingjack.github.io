@@ -100,7 +100,7 @@ service-worker: true
 friends: [
     {
         title: "cro",
-        href: "http://http://blog.icro.me/"
+        href: "http://blog.icro.me/"
     }
    #,{
    #       title: "简书·BY",
