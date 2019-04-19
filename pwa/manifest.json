@@ -3,12 +3,12 @@
   "short_name": "mg blog",
   "description": "A personal blog",
   "icons": [{
-    "src": "icons/favicon-96x96.png",
-    "sizes": "96x96",
+    "src": "icons/android-chrome-192x192",
+    "sizes": "192x192",
     "type": "image/png"
   }, {
-    "src": "icons/apple-icon-152x152.png",
-    "sizes": "152x152",
+    "src": "icons/android-chrome-512x512.png",
+    "sizes": "512x512",
     "type": "image/png"
   }],
   "background_color": "#fff",
