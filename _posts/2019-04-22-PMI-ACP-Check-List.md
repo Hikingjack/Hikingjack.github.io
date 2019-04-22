@@ -61,8 +61,7 @@ PMI-ACP认证是最初始于2012年，相比Scrum联盟的认证不算是新，�
 	- making decisions based on the realities that you observe in the actual project.
 	- **3 Key aspects**: visibility / inspection / adaption
 	
-7. **DSDM**
-	- Dynamic software development method
+7. **DSDM - Dynamic software development method**
 	- **8 Principles**
 		- focus on the business needs
 		- deliver on time
