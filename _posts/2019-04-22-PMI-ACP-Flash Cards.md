@@ -7,7 +7,8 @@ author:     madranger
 header-img: img/agile_20190422.jpg
 catalog: true
 tags:
-    - Tech
+    - Agile
+    - Project Management
 ---
 
 在软件行业混迹了几年后，多少会对`Agile`和`Scrum`之类的概念有所耳闻，很多团队也可能在潜移默化中尝试了很多敏捷的最佳实践，仅仅是没有很笃定地用敏捷来描述自己团队的运作模式。
