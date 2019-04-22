@@ -60,7 +60,7 @@ PMI-ACP认证是最初始于2012年，相比Scrum联盟的认证不算是新，�
 	   
 	>  A set of attitudes supporting an agile working environment. These include respect, collaboration, improvement and learning cycles, pride in ownership, focus on delivering value, and the ability to adapt to change. This mindset is necessary to cultivate high-performing teams, who in turn deliver amazing value for their customers.
 
-5. The top of 12 Agile principle - **`Customer satisfaction`**
+5. **The top of 12 Agile principles** - **`Customer satisfaction`**
 6. **Empirical control method**
 	- making decisions based on the realities that you observe in the actual project.
 	- **3 Key aspects**: visibility / inspection / adaption
@@ -157,6 +157,7 @@ To ask 3 questions
 	- Is there any impediment in your way? – Only update status but don’t come out solution in this meeting
 23. **Sprint review meeting**  
 Held at the end of an iteration, at which the dev team demonstrates working software and solicits feedback from the PO, the customer, management, other dev teams and other project stakeholders. – Focus on `increment/deliverable`
+
 24. **Sprint Retrospective**  
 	- The final meeting for self-evaluation which focus on how to improve the future sprints and how should team to do it. The whole Scrum team should participate – Dev team only with the primary aim for process improvement
 	- **5 Steps**:
@@ -166,12 +167,13 @@ Held at the end of an iteration, at which the dev team demonstrates working soft
 		- Decide what to do
 		- Close the retrospective
 25. **Time-boxing of each Scrum**  
- 	
+
  	- `8 hours or less` for Sprint planning meeting
  	- `2~4 weeks` for a Sprint
  	- `15 mins` for Daily Scrum
  	- `4 hours or less` for Sprint Review
  	- `3 hours or less` for Retrospective
+ 	
 26. **Scrum Artifacts**
 	- Product backlog
 	- Sprint backlog
