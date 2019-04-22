@@ -161,7 +161,8 @@ Held at the end of an iteration, at which the dev team demonstrates working soft
 		- Generate insights
 		- Decide what to do
 		- Close the retrospective
-25. **Time-boxing of each Scrum**
+25. **Time-boxing of each Scrum**  
+ 	
  	- `8 hours or less` for Sprint planning meeting
  	- `2~4 weeks` for a Sprint
  	- `15 mins` for Daily Scrum
