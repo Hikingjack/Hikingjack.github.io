@@ -138,7 +138,7 @@ PMI-ACP认证是最初始于2012年，相比Scrum联盟的认证不算是新，�
 	> this is a self-organized, self-directed and cross-functional team.
 	- The Dev Team (dev & tester)
 	- PO
-	- Scurm master
+	- Scrum master
 	
 19. **5 Events in Scrum**
 	- Sprint planning meeting
@@ -167,13 +167,11 @@ Held at the end of an iteration, at which the dev team demonstrates working soft
 		- Decide what to do
 		- Close the retrospective
 25. **Time-boxing of each Scrum**  
-
  	- `8 hours or less` for Sprint planning meeting
  	- `2~4 weeks` for a Sprint
  	- `15 mins` for Daily Scrum
  	- `4 hours or less` for Sprint Review
  	- `3 hours or less` for Retrospective
- 	
 26. **Scrum Artifacts**
 	- Product backlog
 	- Sprint backlog
