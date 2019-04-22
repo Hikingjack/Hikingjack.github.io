@@ -12,7 +12,10 @@ tags:
 ---
 
 
+
 ##杂念
+
+
 
 在软件行业混迹了几年后，多少会对`Agile`和`Scrum`之类的概念有所耳闻，很多团队也可能在潜移默化中尝试了很多敏捷的最佳实践，仅仅是没有很笃定地用敏捷来描述自己团队的运作模式。
 
@@ -26,7 +29,10 @@ PMI-ACP认证是最初始于2012年，相比Scrum联盟的认证不算是新，�
 
 封面图片：Photo by Ferenc Horvath on Unsplash 👉<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@designhorf?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ferenc Horvath"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Ferenc Horvath</span></a>
 
+
+
 ##有点用的
+
 
 
 1. **Agile Manifesto**  
