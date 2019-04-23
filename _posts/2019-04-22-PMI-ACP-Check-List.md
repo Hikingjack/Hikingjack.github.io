@@ -252,15 +252,19 @@ SDWT is a group of people, usually employees in a company, who combine different
 	- **Forming**
 		- Team is formed and members interact on a very formal basis. They avoid conflict and are exploring each other’s personality from a far distance. – work on their own.
 		- SM/PM to coordinate behaviors, facilitate team to identify goals and develop a shared mental model.
+		- `Directing` as an adaptive leader
 	- **Storming**
 		- Members clash and the first conflicts arise. Members try to take important positions in the team and where the existing authority is questioned. – Difference in opinion, ego clashes.
 		- SM/PM to coach behaviors, act as a resource person to team, calm work environment and develop mutual trust.
+		- 	`Coaching` as an adaptive leader
 	- **Norming**
 		- Emotions settle down and every individual personality takes its place in the team, differences are resolved and the team members’ individual strengths are starting to compliment each other. – begin to trust each other and work towards the goal.
 		- SM/PM to empower behaviors, get feedback from members, allow for the transfer of leadership
+		- `Supporting` as an adaptive leader
 	- **Performing**
 		- Performance is at its peak and the team is collectively, efficiently and effectively working towards a common goal. – work interdependent and effectively.
 		- SM/PM to support behaviors, allow for flexibility in team roles, only provide support when members request
+		- `Delegating` as an adaptive leader
 	- **Adjourning**
 		- team is disbanded as project is complete
 58. **Shu-Ha-Ri Model**  
