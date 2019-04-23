@@ -54,7 +54,7 @@ PMI-ACP认证是最初始于2012年，相比Scrum联盟的认证不算是新，�
 	- **Improve effectiveness and reliability** - through situationally specific strategies, processes and practices.
 
 3. **Agile vs. Waterfall**  
-![](\agile_waterfall_diff.png)
+![](\pm\agile_waterfall_diff.png)
 
 4. **A brief of Agile mindset**  
 	   
@@ -189,7 +189,7 @@ DoD means each backlog items has acceptance criteria that define measurably what
 	- Lean helps optimize process
 	- Scrum is a framework and its primary goal is on the people
 32. **Kanban vs. Scrum**  
-![](\kanban_scrum_diff.png)
+![](\pm\kanban_scrum_diff.png)
 33. **Epic**  
 A big chunk of work and very large user story that has one common objective from the high level view; is eventually broken down into smaller stories
 34. **Theme**  
