@@ -1,14 +1,15 @@
 ---
 layout:     post
-title:      Time to Pay Your Technical Debt
-subtitle:   An inevitable part of everyday life
-date:       2019-04-26
+title:      如何安心搭建家用群晖NAS
+subtitle:   有这一篇基本就够玩转NAS了
+date:       2019-04-30
 author:     madranger
-header-img: img/pm/tech_debt.png
+header-img: img/NAS_personal_cloud.jpg
 catalog: true
 tags:
-    - Agile
-    - Project Management
+    - NAS
+    - 群晖
+    - Synology
 
 ---
 
