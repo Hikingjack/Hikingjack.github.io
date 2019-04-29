@@ -13,12 +13,6 @@ tags:
 
 ---
 
-Photo by <a href="https://foter.co/a1/fb6854">wuestenigel</a> on <a href="https://foter.com/re2/e5846c">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/">CC BY</a>
-
-
-
-
-
 
 
 Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/person-holding-pen-drawing-on-paper-1483937/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
