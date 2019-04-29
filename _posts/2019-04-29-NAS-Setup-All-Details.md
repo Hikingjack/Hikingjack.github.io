@@ -1,16 +1,24 @@
 ---
 layout:     post
-title:      家用群晖NAS搭建细节
-subtitle:   有这一篇基本就够玩转NAS了
-date:       2019-04-30
+title:      Time to Pay Your Technical Debt
+subtitle:   An inevitable part of everyday life
+date:       2019-04-26
 author:     madranger
-header-img: img/NAS_personal_cloud.jpg
+header-img: img/pm/tech_debt.png
 catalog: true
 tags:
-    - NAS
-    - 群晖
-	- Synology
+    - Agile
+    - Project Management
+
 ---
+
+Photo by <a href="https://foter.co/a1/fb6854">wuestenigel</a> on <a href="https://foter.com/re2/e5846c">Foter.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/">CC BY</a>
+
+
+
+
+
+
 
 Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/person-holding-pen-drawing-on-paper-1483937/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
