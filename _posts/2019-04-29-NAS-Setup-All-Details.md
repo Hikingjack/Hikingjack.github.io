@@ -25,7 +25,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 好了，道理都懂，但是有时候就是差一篇点燃你心中小火苗的文章。我看到的是这一篇，推荐一下。
 
-![https://post.smzdm.com/p/672137/](res\nas\first_article.jpg)
+![https://post.smzdm.com/p/672137/](res/nas/first_article.jpg)
 
 在搭建NAS的过程中，我的朋友[CRO](http://blog.icro.me/)给予了很多帮助，他的两篇文章也非常受用。
 
@@ -421,4 +421,3 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 如果一切正常，现在你已经可以通过HTTPS访问自己的NAS啦！:smiley_cat: 希望你可以看到一样的绿色小图标！
 
 ![](res\nas\nas_ssl_done.jpg)
-
