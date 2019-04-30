@@ -19,8 +19,6 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-## 一篇极具煽动性的文章
-
 最早了解到NAS是几年前了，无奈漂泊的租房生活，迟迟没有下手。几个IT Geek型的朋友的各样花式玩法，更是让人忍不住想折腾一番。
 
 比如，一个朋友自己买了HP的工作站，从零开始搭建NAS，搭载了40T的硬盘，创建了私有4K影院。:joy_cat: 另一个朋友用旧的笔记本，不仅实现了文件、影音管理，最关键是集成海康威视的夜视动态跟踪摄像头，让我想起了读研时参与的女子监狱研发项目。:joy_cat:
