@@ -67,7 +67,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 **售价**：3,900 RMB左右（加装4G内存，另需500 RMB左右）
 
-**参考链接**：https://bit.ly/2GLlaNA
+**参考链接**：<https://bit.ly/2GLlaNA>
 
 **使用感受**：4盘位确保了家用存储的需要，体积小巧，放在客厅毫无违和感，安静，散热良好（生活在热带地区，比较关注这点）。
 
@@ -79,7 +79,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 **售价**：550 RMB左右
 
-**参考链接**：https://bit.ly/2XSEG1G
+**参考链接**：<https://bit.ly/2XSEG1G>
 
 **使用感受**：重，搬运注意保护好腰。
 
@@ -91,7 +91,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 **售价**：780 RMB左右 / 4TB / 片
 
-**参考链接**：https://bit.ly/2IObWnm
+**参考链接**：<https://bit.ly/2IObWnm>
 
 **使用感受**：目前测试磁盘速度OK，如果你考虑西数红盘，需要看看其他测评文章。
 
@@ -103,7 +103,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 **售价**：100 RMB / 3米
 
-**参考链接**：https://bit.ly/2XV1gH3
+**参考链接**：<https://bit.ly/2XV1gH3>
 
 **使用感受**：镀金片包头，传说中可以降低信号损耗，并有效屏蔽干扰。
 
@@ -260,7 +260,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 #### 创建DDNS
 
-这里选择使用[DNSPOD](http://blog.icro.me/2019/01/04/Nas-01/dnspod.cn)做域名的解析，至于什么是DDNS？请参考这篇文章-[DDNS的介绍](https://hsk.oray.com/news/3774.html)，而DNSPod是国内免费智能DNS解析服务商，此外还有很多别的选择。国外用户可以用www.dnspod.com
+这里选择使用[DNSPOD](http://blog.icro.me/2019/01/04/Nas-01/dnspod.cn)做域名的解析，至于什么是DDNS？请参考这篇文章-[DDNS的介绍](https://hsk.oray.com/news/3774.html)，而DNSPod是国内免费智能DNS解析服务商，此外还有很多别的选择。国外用户可以用<www.dnspod.com>
 
 首先，选择「域名解析」栏，添加你申请的顶级域名:
 
@@ -304,7 +304,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 #### 设置NAS的外部访问
 
-登录NAS，在**控制面板** :arrow_forward: **连接性** :arrow_forward: **外部访问**中，选择**DDNS**，新增一条记录，如下：
+登录NAS，在**控制面板** --> **连接性** --> **外部访问**中，选择**DDNS**，新增一条记录，如下：
 
 ![](/img/nas/nas_ddns_config.jpg)
 
@@ -376,7 +376,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 #### 为NAS导入证书
 
-首先，在NAS的**控制面板 **--> **连接性**  ** --> **网络**   ** --> ​ **DSM设置**里将HTTP请求自动转向HTTPS。
+首先，在NAS的**控制面板 **--> **连接性**  --> **网络** --> ​**DSM设置**里将HTTP请求自动转向HTTPS。
 
 ![](/img/nas/nas_cert_00.jpg)
 
