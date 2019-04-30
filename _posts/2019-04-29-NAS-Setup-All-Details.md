@@ -8,7 +8,6 @@ header-img: img/NAS_personal_cloud.jpg
 catalog: true
 tags:
     - NAS
-    - 群晖
     - Synology
 typora-root-url: ..
 ---
