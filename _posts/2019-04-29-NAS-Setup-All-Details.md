@@ -21,7 +21,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 最早了解到NAS是几年前了，无奈漂泊的租房生活，迟迟没有下手。几个IT Geek型的朋友的各样花式玩法，更是让人忍不住想折腾一番。
 
-比如，一个朋友自己买了HP的工作站，从零开始搭建NAS，搭载了40T的硬盘，创建了私有4K影院。:joy_cat: 另一个朋友用旧的笔记本，不仅实现了文件、影音管理，最关键是集成海康威视的夜视动态跟踪摄像头，让我想起了读研时参与的女子监狱研发项目。:joy_cat:
+比如，一个朋友自己买了HP的工作站，从零开始搭建NAS，搭载了40T的硬盘，创建了私有4K影院。另一个朋友用旧的笔记本，不仅实现了文件、影音管理，最关键是集成海康威视的夜视动态跟踪摄像头，让我想起了读研时参与的女子监狱研发项目。
 
 好了，道理都懂，但是有时候就是差一篇点燃你心中小火苗的文章。我看到的是这一篇，推荐一下。
 
@@ -29,8 +29,8 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 在搭建NAS的过程中，我的朋友[CRO](http://blog.icro.me/)给予了很多帮助，他的两篇文章也非常受用。
 
-- [如何让你的群晖通过顶级域名外网访问](http://blog.icro.me/2019/01/04/Nas-01/) :+1:
-- [如何让你的顶级域名拥有SSL证书](http://blog.icro.me/2019/01/09/Nas-02/) :+1:
+- [如何让你的群晖通过顶级域名外网访问](http://blog.icro.me/2019/01/04/Nas-01/) 
+- [如何让你的顶级域名拥有SSL证书](http://blog.icro.me/2019/01/09/Nas-02/)
 
 
 
@@ -177,7 +177,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
   - 如果无法访问（典型的0x80070035错误），检查以下配置：
 
     - 尝试使用内网IP地址+端口号访问
-      如下图，路由器给NAS自动分配的内网IP是`192.168.1.16`*（稍后可以在路由器中固定这个IP）*，默认端口号5000，可以在**控制面板** :arrow_forward: **连接性** :arrow_forward: **网络** :arrow_forward: **DSM设定**，看到DSM端口，这里先用HTTP端口测试。
+      如下图，路由器给NAS自动分配的内网IP是`192.168.1.16`*（稍后可以在路由器中固定这个IP）*，默认端口号5000，可以在**控制面板** -->**连接性** --> **网络**  --> **DSM设定**，看到DSM端口，这里先用HTTP端口测试。
 
       例如，我的环境下，`\\mad`UNC路径访问时空文件夹，但是`\\192.168.1.16:5000`没有问题。需要继续找原因。
 
@@ -209,7 +209,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
   
 
-- 如果上述访问均成功，可以考虑在**控制面板** :arrow_forward: **连接性** :arrow_forward: **安全性** :arrow_forward: **防火墙**中，启用防火墙。在测试下Windows和Mac是否可以正常访问。这一步是为了接下来设置外网访问最准备，尽管路由器有物理防火墙的作用，但多一些防护总是好的。
+- 如果上述访问均成功，可以考虑在**控制面板** --> **连接性**  --> **安全性**  --> **防火墙**中，启用防火墙。在测试下Windows和Mac是否可以正常访问。这一步是为了接下来设置外网访问最准备，尽管路由器有物理防火墙的作用，但多一些防护总是好的。
 
 
 
@@ -232,17 +232,12 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 如果需要使用私有域名访问家里的NAS，主要有以下6步：
 
-​	:one: [验证公网IP](#验证公网IP)
-
-​	:two: [购买域名](#购买域名)
-
-​	:three: [创建DDNS](#创建DDNS)
-
-​	:four: [修改私有域名的NameServer](#修改私有域名的NameServer)
-
-​	:five: [设置NAS的外部访问](#设置NAS的外部访问)
-
-​	:six: [设置路由器端口映射](#设置路由器端口映射)
+- [验证公网IP](#验证公网IP)
+- [购买域名](#购买域名)
+- [创建DDNS](#创建DDNS)
+- [修改私有域名的NameServer](#修改私有域名的NameServer)
+- [设置NAS的外部访问](#设置NAS的外部访问)
+- [设置路由器端口映射](#设置路由器端口映射)
 
 
 
@@ -282,7 +277,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 - **第二条**，确保只在浏览器输入`你的域名`，也可以访问。
 - **第三条**，稍后HTTPS配置时，再填写。
 
-之后，在DNSPOD的**用户中心** :arrow_forward: **安全设置** :arrow_forward: **API Token**，输入名称并创建API Token，请务必保存好这个信息！
+之后，在DNSPOD的**用户中心** --> **安全设置** --> **API Token**，输入名称并创建API Token，请务必保存好这个信息！
 
 最后，保存上图中的2个NS记录，在下一步中的域名供应商处，进行修改配置。
 
@@ -330,7 +325,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 由于NAS默认端口是5000，且电信运营商一般会屏蔽80, 8080端口，我们需要手动在路由器做`端口转发`。
 
-登录NetGear R7000，在**高级** :arrow_forward: **高级设置** :arrow_forward: **端口映射/端口出发**中，新增一条`端口映射`
+登录NetGear R7000，在**高级 **--> **高级设置 **--> **端口映射/端口出发**中，新增一条`端口映射`
 
 ![](/img/nas/netgear_port_foward.jpg)
 
@@ -350,11 +345,9 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 #### 主要步骤
 
-​	:one: [通过阿里云申请免费SSL证书](#通过阿里云申请免费SSL证书)
-
-​	:two: [为NAS导入证书](#为NAS导入证书)
-
-​	:three: [测试](#测试)
+- [通过阿里云申请免费SSL证书](#通过阿里云申请免费SSL证书)
+- [为NAS导入证书](#为NAS导入证书)
+- [测试](#测试)
 
 
 
@@ -368,7 +361,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 
 
-根据网页要求，填写必要信息，申请审核。这里说明一下，<u>**没有必要**</u>在NAS里**控制面板** :arrow_forward: **连接性** :arrow_forward: **安全性**  :arrow_forward: **证书**，生成CSR。
+根据网页要求，填写必要信息，申请审核。这里说明一下，<u>**没有必要**</u>在NAS里**控制面板** --> **连接性 **--> **安全性** --> **证书**，生成CSR。
 
 一般睡一觉后，审核通过。可以在控制台看到已签发的证书。
 
@@ -386,7 +379,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 #### 为NAS导入证书
 
-首先，在NAS的**控制面板** :arrow_forward: **连接性** :arrow_forward: **网络**  :arrow_forward: **DSM设置**里将HTTP请求自动转向HTTPS。
+首先，在NAS的**控制面板 **--> **连接性**  ** --> **网络**   ** --> ​ **DSM设置**里将HTTP请求自动转向HTTPS。
 
 ![](/img/nas/nas_cert_00.jpg)
 
@@ -418,6 +411,6 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 #### 测试
 
-如果一切正常，现在你已经可以通过HTTPS访问自己的NAS啦！:smiley_cat: 希望你可以看到一样的绿色小图标！
+如果一切正常，现在你已经可以通过HTTPS访问自己的NAS啦！​希望你可以看到一样的绿色小图标！
 
 ![](/img/nas/nas_ssl_done.jpg)
