@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      如何安心搭建家用群晖NAS
-subtitle:   有这一篇基本就够玩转NAS了
+subtitle:   初体验详细报告
 date:       2019-04-29
 author:     madranger
 header-img: img/NAS_personal_cloud.jpg
