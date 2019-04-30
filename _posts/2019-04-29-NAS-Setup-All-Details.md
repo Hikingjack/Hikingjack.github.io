@@ -19,7 +19,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-# 一篇极具煽动性的文章
+## 一篇极具煽动性的文章
 
 最早了解到NAS是几年前了，无奈漂泊的租房生活，迟迟没有下手。几个IT Geek型的朋友的各样花式玩法，更是让人忍不住想折腾一番。
 
@@ -36,7 +36,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-# 目录
+## 目录
 
 :one: [准备剁手](#准备剁手) - 购买建议
 
@@ -48,13 +48,13 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-# 准备剁手
+## 准备剁手
 
 如果你的家用网络设备比较陈旧，建议考虑整体升级。下面的剁手清单是我目前搭建所用的设备，仅供参考。
 
 
 
-### 千兆路由器 - Netgear R7000
+#### 千兆路由器 - Netgear R7000
 
 这是一款广受好评，性价比较高的千兆路由器。该有的功能都有了。
 
@@ -66,7 +66,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 群晖- DS418Play
+#### 群晖- DS418Play
 
 个人感觉性价比最优的选择。
 
@@ -78,7 +78,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### UPS - APC施耐德BK650-CH
+#### UPS - APC施耐德BK650-CH
 
 确保你的硬盘避免断电、雷暴造成的损害。
 
@@ -90,7 +90,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 硬盘 - 希捷ST4000VN008
+#### 硬盘 - 希捷ST4000VN008
 
 确保你的硬盘避免断电、雷暴造成的损害。
 
@@ -102,7 +102,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 网线 - ELECOM Cat8
+#### 网线 - ELECOM Cat8
 
 千兆网线，不辜负你的路由器和NAS。
 
@@ -114,19 +114,19 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 个人域名（可选）
+#### 个人域名（可选）
 
 如果你想从外网使用自己的域名访问家里的NAS的话。
 
 
 
-### 开发者SSL证书（可选）
+#### 开发者SSL证书（可选）
 
 如果你想让自己的域名前面有HTTPS字样，稍微安全点。
 
 
 
-### 其他网盘会员（可选）
+#### 其他网盘会员（可选）
 
 非常重要的东西，还是多备份几遍。目前我使用Google Drive和百度云跟家里的NAS对指定的目录同步。免费账户里的几十GB空间，足够日常使用。
 
@@ -134,9 +134,9 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-# 开始搭建
+## 开始搭建
 
-### 初始安装 - 观看5分钟视频
+#### 初始安装 - 观看5分钟视频
 
 - 先把UPS安装好，但先不要开电源。
 - 群晖开箱后，说明是非常简单，以至于不熟悉硬件的朋友，安装硬盘都摸不到头脑。建议观看[**这个官方视频**](https://bit.ly/2XQXKgP)，文中有详细的接口说明。
@@ -146,7 +146,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 基本配置
+#### 基本配置
 
 推荐的基本配置如下，其他设置可以稍后慢慢自定义。
 
@@ -154,11 +154,11 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 2. **管理当前用户**，比如设置新的密码，推荐打开`2步骤验证`
 3. **进入控制面板**，创建文件目录，定义用户和权限组。
 
-![](D:\ProgramData\git\imadranger.github.io\_posts\res\nas\basic_setting.jpg)
+![](res\nas\basic_setting.jpg)
 
 
 
-### 确保电脑可以访问文件目录 （很重要:exclamation: ）
+#### 确保电脑可以访问文件目录 （很重要:exclamation: ）
 
 - 进入**控制面板** :arrow_forward: **文件服务** :arrow_forward: **SMB/AFP/NFS**，检查下面的配置。
 
@@ -166,7 +166,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-- <u>**Windows 10 的网络文件目录访问方式**</u>
+- **Windows 10 的网络文件目录访问方式**
 
   - 首先，在右键**我的电脑**，在**属性**页面里，确保`Workgroup`和NAS里的**工作组群**一致。
 
@@ -203,7 +203,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
       https://bit.ly/2J2dycl
 
-- <u>**Mac OS的网络文件目录访问方式**</u>
+- **Mac OS的网络文件目录访问方式**
 
   - 我的Macbook访问网络文件目录比较顺利，可以在Finder中找到，点击`Connect As...`输入用户名/密码后，可以看到下图：
 
@@ -219,9 +219,9 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-# 外网访问
+## 外网访问
 
-### 外网访问须知
+#### 外网访问须知
 
 注意，在NAS基本配置完成之后，其实已经可以借助群晖的`QuickConnect`地址`http://QuickConnect.to/你的NAS名称`，从外网访问。但是有两个弊端：
 
@@ -230,7 +230,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 主要步骤
+#### 主要步骤
 
 如果需要使用私有域名访问家里的NAS，主要有以下6步：
 
@@ -248,7 +248,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 验证公网IP
+#### 验证公网IP
 
 打开路由器后台管理地址，查看获取到的 IP 地址是否和 https://ip.sb/ 显示的地址是否一样。如果一样的情况下，一般为公网IP。 不一样的话，或许不是公网IP，请联系你的运营商客服。
 
@@ -262,13 +262,13 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 购买域名
+#### 购买域名
 
 在各大域名商自行购买。
 
 
 
-### 创建DDNS
+#### 创建DDNS
 
 这里选择使用[DNSPOD](http://blog.icro.me/2019/01/04/Nas-01/dnspod.cn)做域名的解析，至于什么是DDNS？请参考这篇文章-[DDNS的介绍](https://hsk.oray.com/news/3774.html)，而DNSPod是国内免费智能DNS解析服务商，此外还有很多别的选择。国外用户可以用www.dnspod.com
 
@@ -294,7 +294,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 修改私有域名的NameServer
+#### 修改私有域名的NameServer
 
 以我的域名为例，需要登录到Godaddy网站，修改DNS配置。
 
@@ -312,7 +312,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 
 
-### 设置NAS的外部访问
+#### 设置NAS的外部访问
 
 登录NAS，在**控制面板** :arrow_forward: **连接性** :arrow_forward: **外部访问**中，选择**DDNS**，新增一条记录，如下：
 
@@ -328,7 +328,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 
 
-### 设置路由器端口映射
+#### 设置路由器端口映射
 
 由于NAS默认端口是5000，且电信运营商一般会屏蔽80, 8080端口，我们需要手动在路由器做`端口转发`。
 
@@ -348,9 +348,9 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 
 
-# 使用HTTPS访问
+## 使用HTTPS访问
 
-### 主要步骤
+#### 主要步骤
 
 ​	:one: [通过阿里云申请免费SSL证书](#通过阿里云申请免费SSL证书)
 
@@ -360,7 +360,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 
 
-### 通过阿里云申请免费SSL证书
+#### 通过阿里云申请免费SSL证书
 
 如果钱包宽裕，可以考虑购买SSL证书，具体优点请参考各大供应商。不过，有一些供应商为个人开发者提供免费的SSL证书。在我的配置中，采用阿里云免费SSL证书。
 
@@ -382,11 +382,11 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 在本地解压后，得到3个文件。稍后会用到。
 
-![](D:\ProgramData\git\imadranger.github.io\_posts\res\nas\alicloud_ssl_cert_unzip.jpg)
+![](res\nas\alicloud_ssl_cert_unzip.jpg)
 
 
 
-### 为NAS导入证书
+#### 为NAS导入证书
 
 首先，在NAS的**控制面板** :arrow_forward: **连接性** :arrow_forward: **网络**  :arrow_forward: **DSM设置**里将HTTP请求自动转向HTTPS。
 
@@ -418,7 +418,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 
 
-### 测试
+#### 测试
 
 如果一切正常，现在你已经可以通过HTTPS访问自己的NAS啦！:smiley_cat: 希望你可以看到一样的绿色小图标！
 
