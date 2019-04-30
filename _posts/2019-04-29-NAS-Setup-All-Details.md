@@ -153,9 +153,9 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 
 
-#### 确保电脑可以访问文件目录 （很重要:exclamation: ）
+#### 确保电脑可以访问文件目录 （很重要）
 
-- 进入**控制面板** :arrow_forward: **文件服务** :arrow_forward: **SMB/AFP/NFS**，检查下面的配置。
+- 进入**控制面板** --> **文件服务** --> **SMB/AFP/NFS**，检查下面的配置。
 
 ![](/img/nas/network_folder.jpg)
 
@@ -171,7 +171,7 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
   ![](/img/nas/win_folder.jpg)
 
-  - 如果无法访问（典型的0x80070035错误），检查以下配置：
+  - 如果无法访问（典型的**0x80070035**错误），检查以下配置：
 
     - 尝试使用内网IP地址+端口号访问
       如下图，路由器给NAS自动分配的内网IP是`192.168.1.16`*（稍后可以在路由器中固定这个IP）*，默认端口号5000，可以在**控制面板** -->**连接性** --> **网络**  --> **DSM设定**，看到DSM端口，这里先用HTTP端口测试。
