@@ -10,7 +10,7 @@ tags:
     - NAS
     - 群晖
     - Synology
-
+typora-root-url: ..
 ---
 
 
@@ -27,7 +27,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 好了，道理都懂，但是有时候就是差一篇点燃你心中小火苗的文章。我看到的是这一篇，推荐一下。
 
-![https://post.smzdm.com/p/672137/](res/nas/first_article.jpg)
+![https://post.smzdm.com/p/672137/](/img/nas/first_article.jpg)
 
 在搭建NAS的过程中，我的朋友[CRO](http://blog.icro.me/)给予了很多帮助，他的两篇文章也非常受用。
 
@@ -154,7 +154,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 2. **管理当前用户**，比如设置新的密码，推荐打开`2步骤验证`
 3. **进入控制面板**，创建文件目录，定义用户和权限组。
 
-![](res\nas\basic_setting.jpg)
+![](/img/nas/basic_setting.jpg)
 
 
 
@@ -162,7 +162,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 - 进入**控制面板** :arrow_forward: **文件服务** :arrow_forward: **SMB/AFP/NFS**，检查下面的配置。
 
-![](res\nas\network_folder.jpg)
+![](/img/nas/network_folder.jpg)
 
 
 
@@ -170,11 +170,11 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
   - 首先，在右键**我的电脑**，在**属性**页面里，确保`Workgroup`和NAS里的**工作组群**一致。
 
-  ![](res\nas\win_workgroup.jpg)
+  ![](/img/nas/win_workgroup.jpg)
 
   - 之后，在文件目录里，输入NAS里显示在`PC(Windows)资源管理器`的值，比如`\\mad`。如果正常的话，会弹出对话框要求输入NAS的登录名和密码，之后应该可以看到下图：
 
-  ![](res\nas\win_folder.jpg)
+  ![](/img/nas/win_folder.jpg)
 
   - 如果无法访问（典型的0x80070035错误），检查以下配置：
 
@@ -183,17 +183,17 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
       例如，我的环境下，`\\mad`UNC路径访问时空文件夹，但是`\\192.168.1.16:5000`没有问题。需要继续找原因。
 
-    ![](res\nas\nas_local_ip.png)
+    ![](/img/nas/nas_local_ip.png)
 
     - 查看PC上的网络链接设置
 
       在**系统设置**的**网络设置**中，点击**修改连接属性**。
 
-      ![](res\nas\pc_network_setting_01.jpg)
+      ![](/img/nas/pc_network_setting_01.jpg)
 
       在打开的页面中，选择**私有**。之后在试试`\\mad`网络路径。
 
-      ![](res\nas\pc_network_setting_02.jpg)
+      ![](/img/nas/pc_network_setting_02.jpg)
 
     - 如果还是不行，下面的几篇文章可能可以解决你的问题。
 
@@ -207,7 +207,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
   - 我的Macbook访问网络文件目录比较顺利，可以在Finder中找到，点击`Connect As...`输入用户名/密码后，可以看到下图：
 
-  ![](res\nas\mac_folder.jpg)
+  ![](/img/nas/mac_folder.jpg)
 
   
 
@@ -254,11 +254,11 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 以NetGear R7000原生固件为例。
 
-![](res\nas\ip_netgear.jpg)
+![](/img/nas/ip_netgear.jpg)
 
 
 
-![](res\nas\ip_checking.jpg)
+![](/img/nas/ip_checking.jpg)
 
 
 
@@ -274,11 +274,11 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 首先，选择「域名解析」栏，添加你申请的顶级域名:
 
-![](res\nas\dnspod_add_domain.jpg)
+![](/img/nas/dnspod_add_domain.jpg)
 
 进入添加域名的详细页面，新增以下一条记录:
 
-![](res\nas\dnspod_config_domain.jpg)
+![](/img/nas/dnspod_config_domain.jpg)
 
 - **第一条**，确保`www`+`你的域名`可以工作。主机记录：可以填127.0.0.1，或者直接填写你的IP。因为DDNS服务稍后会探测到你的IP变化，自动更新。
 - **第二条**，确保只在浏览器输入`你的域名`，也可以访问。
@@ -298,7 +298,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 以我的域名为例，需要登录到Godaddy网站，修改DNS配置。
 
-![](res\nas\godaddy_config_ns.jpg)
+![](/img/nas/godaddy_config_ns.jpg)
 
 
 
@@ -308,7 +308,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 >
 > f1g1ns2.dnspod.net
 
-![](res\nas\godaddy_config_ns_done.jpg)
+![](/img/nas/godaddy_config_ns_done.jpg)
 
 
 
@@ -316,7 +316,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 登录NAS，在**控制面板** :arrow_forward: **连接性** :arrow_forward: **外部访问**中，选择**DDNS**，新增一条记录，如下：
 
-![](res\nas\nas_ddns_config.jpg)
+![](/img/nas/nas_ddns_config.jpg)
 
 
 
@@ -324,7 +324,7 @@ Photo by [rawpixel.com](https://www.pexels.com/@rawpixel?utm_content=attribution
 
 _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域名记录值已经不是 127.0.0.1，而且我们真实的公网 IP。当公网 IP 发生变化时，DDNS服务会自动更新子域名的记录值。这样只需通过子域名就可以访问到我们的设备。*
 
-![](res\nas\nas_ddns_config_good.jpg)
+![](/img/nas/nas_ddns_config_good.jpg)
 
 
 
@@ -334,7 +334,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 登录NetGear R7000，在**高级** :arrow_forward: **高级设置** :arrow_forward: **端口映射/端口出发**中，新增一条`端口映射`
 
-![](res\nas\netgear_port_foward.jpg)
+![](/img/nas/netgear_port_foward.jpg)
 
 这里的**内部IP地址**是路由器分配，或者你指定的。端口配置为一个范围：
 
@@ -366,7 +366,7 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 首先，登录阿里云（淘宝账号同步）的[SSL证书页面](https://bit.ly/2WaTI2h)，选择**免费证书**，并跟随引导购买。
 
-![](res\nas\alicloud_ssl_cert.jpg)
+![](/img/nas/alicloud_ssl_cert.jpg)
 
 
 
@@ -374,15 +374,15 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 一般睡一觉后，审核通过。可以在控制台看到已签发的证书。
 
-![](res\nas\alicloud_ssl_cert_done.jpg.png)
+![](/img/nas/alicloud_ssl_cert_done.jpg.png)
 
 点击并下载**Apache服务器**类型的证书。
 
-![](res\nas\alicloud_ssl_cert_download.jpg)
+![](/img/nas/alicloud_ssl_cert_download.jpg)
 
 在本地解压后，得到3个文件。稍后会用到。
 
-![](res\nas\alicloud_ssl_cert_unzip.jpg)
+![](/img/nas/alicloud_ssl_cert_unzip.jpg)
 
 
 
@@ -390,27 +390,27 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 首先，在NAS的**控制面板** :arrow_forward: **连接性** :arrow_forward: **网络**  :arrow_forward: **DSM设置**里将HTTP请求自动转向HTTPS。
 
-![](res\nas\nas_cert_00.jpg)
+![](/img/nas/nas_cert_00.jpg)
 
 
 
 登录NAS页面，在**控制面板** :arrow_forward: **连接性** :arrow_forward: **安全性**  :arrow_forward: **证书**里，新增一个证书，填写名称并点击下一步。
 
-![](res\nas\nas_cert_01.jpg)
+![](/img/nas/nas_cert_01.jpg)
 
 
 
 将3个证书，选中在对应的位置，如下。并保存。
 
-![](res\nas\nas_cert_02.jpg)
+![](/img/nas/nas_cert_02.jpg)
 
 选中刚创建好的证书，点击**配置**。
 
-![](res\nas\nas_cert_03.jpg)
+![](/img/nas/nas_cert_03.jpg)
 
 将3个条目，均选中刚创建的证书。
 
-![](res\nas\nas_cert_04.jpg)
+![](/img/nas/nas_cert_04.jpg)
 
 
 
@@ -422,4 +422,4 @@ _**Note:**_ *现在，刷新 Dnspod 控制台页面也会看到对应的子域�
 
 如果一切正常，现在你已经可以通过HTTPS访问自己的NAS啦！:smiley_cat: 希望你可以看到一样的绿色小图标！
 
-![](res\nas\nas_ssl_done.jpg)
+![](/img/nas/nas_ssl_done.jpg)
