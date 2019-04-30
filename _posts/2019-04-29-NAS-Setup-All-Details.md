@@ -36,13 +36,10 @@ Photo by [Caspar Camille Rubin](https://unsplash.com/photos/oI6zrBj3nKw?utm_sour
 
 ## 目录
 
-:one: [准备剁手](#准备剁手) - 购买建议
-
-:two: [开始搭建](#开始搭建) - 基础配置
-
-:three: [外网访问](#外网访问) - 基本HTTP访问
-
-:four: [使用HTTPS访问](#使用HTTPS访问) - SSL证书护航
+- [准备剁手](#准备剁手) - 购买建议
+- [开始搭建](#开始搭建) - 基础配置
+- [外网访问](#外网访问) - 基本HTTP访问
+- [使用HTTPS访问](#使用HTTPS访问) - SSL证书护航
 
 
 
