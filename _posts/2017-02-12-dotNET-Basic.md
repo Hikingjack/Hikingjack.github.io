@@ -2,7 +2,7 @@
 layout:     post
 title:      Some essential C# Questions
 subtitle:   What I usually ask and I had been asked
-date:       2017-02-06
+date:       2017-02-22
 author:     madranger
 header-img: img/post-bg-code.jpg
 catalog: true
@@ -55,20 +55,22 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 	- Cannot have static fields or methods. Interface is a contract. To use the contract you'll need an instance of the type. Static members are not applied to an instance but shared across all instances. Therefore a static member on an interface doesn't make sense because you could never call it. 
 	- You can use use a interface to inherit another. but in class, you need to implement both.
 
-    		interface IMovable
-			{
-		        void MoveForward();
-		    }
+    		```
+		interface IMovable
+		{
+		    void MoveForward();
+		}
+		```
 		
-		```C#
+		```
 		interface ITalk : IMovable
 		{
 		    void Talk();
 		}
 		
-		public class Human : ITalk
+    public class Human : ITalk
 		{
-    public void Talk() { }
+		public void Talk() { }
 		
 			// need to implement MoveForward() too
 		}
@@ -80,15 +82,21 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 > 3 - Difference between `protected` and `virtual` in Abstract class**
 
 - `protected` means that it is visible only inside this class and classes derived from it. it should be compared with `public`, `private`
+
 - `virtual` means that it can be `overriden` in derived classes.
+
 - You can define a method below. it means you can override it in sub-class but not only visible inside of this class or lower-level classes.  
   
-		interface IMovable
-	    {
-	        void MoveForward();
-	    }
+		```
+	interface IMovable
+	{
+	    void MoveForward();
+	}
+	```
 	
-	```c#
+	
+	
+	```
 	public abstract class Object
 	{
 	    protected virtual void Read()
@@ -120,7 +128,7 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 
 - `Explicit`: you can only access methods and properties when treating the class as the implemented interface.
 
-		~~~C#
+		~~~
 	interface IControl
 	{
 	    void Paint();
@@ -131,7 +139,7 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 	}
 	~~~
 	
-	```C#
+	```
 	class SampleClass : IControl, ISurface
 	{
 	    // Both ISurface.Paint and IControl.Paint call this method. 
@@ -184,7 +192,7 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 	- Syntax
 
 			delegate <return type> delegate_name(parameter_list);	
-		```C#
+		```
 		//Example
 		public delegate String StringDelegate(Int32 value);
 		
@@ -214,7 +222,7 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 			event event_delegate event_name;
 			//[event_delegate] show the name of the delegate that is supporting the event.
 
-		```C#
+		```
 		//Example
 public delegate void PrintEventHandler(String msg);
 		
@@ -272,14 +280,14 @@ public delegate void PrintEventHandler(String msg);
 
 - To define it, create a static class and define a static method with `this` keyword of parameter.
 
-		~~~C#
+		~~~
 	public static class StringExt
+	{
+	    public static String FullTrim(this String value)
 	    {
-	        public static String FullTrim(this String value)
-	        {
-	            return value.Trim();
-	        }
+	        return value.Trim();
 	    }
+	}
 	~~~
 
 
@@ -290,12 +298,12 @@ public delegate void PrintEventHandler(String msg);
 
 - LINQ comes in two flavours – using **`Lambda Expressions`** and using **`SQL-like Query  Expressions`**
 
-		~~~C#
+		~~~
 	Func<int, bool> isEven = i => i % 2 == 0;
 		int[] ints = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	~~~
 	
-	```C#
+	```
 	// using Query expression
 	var evensQuery = from i in ints where isEven(i) select i;
 	// using Lambda expression
@@ -304,14 +312,14 @@ public delegate void PrintEventHandler(String msg);
 	
 - LINQ queries are based on generic types
 
-   ~~~C#
+   ~~~
    IEnumerable<Customer> customerQuery =
    						    from cust in customers
    						    where cust.City == "London"
    						    select cust;
    ~~~
 
-   ```C#
+   ```
    foreach (Customer customer in customerQuery)
    {
        Console.WriteLine(customer.LastName + ", " + customer.FirstName);
