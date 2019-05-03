@@ -2,7 +2,7 @@
 layout:     post
 title:      Some essential C# Questions
 subtitle:   What I usually ask and I had been asked
-date:       2017-02-22
+date:       2019-05-02
 author:     madranger
 header-img: img/post-bg-code.jpg
 catalog: true
