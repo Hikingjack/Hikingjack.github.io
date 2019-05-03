@@ -15,18 +15,14 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 
 
 
-# Index
+## Dependency Injection
 
-[TOC]
-
-# Dependency Injection
-
-### Good to know
+#### Good to know
 
 - **Inversion of Control Principle (IoC)** - Normally, the flow of the program logic is determined by objects that are bound to one another. With the inversion of control, the flow depends on the defined abstractions to be implemented that is built up **during program execution**. This principle can be achieved by techniques like dependency injection. In IoC, the code could also be linked statically during compilation to the defined interface functions, but finding the implementation of the function to execute by reading its description from external configuration instead of with a direct reference in the code itself.
 - **Dependency Injection (DI)** - is an object-oriented programming design pattern that allows us to develop loosely coupled code. It helps in getting rid of tightly coupled software components. The purpose is to make code maintainable and easy to update.
 
-### Traditional Programming
+#### Traditional Programming
 
 All objects are known and used in code before compiling. Take payment as an example, you have to change lots of source code if you change from Apple Pay to Google Pay.
 
@@ -157,7 +153,7 @@ public class ShoppingLogic
 
 However, obviously the core logic is still tightly coupled. We may start thinking about the best way to tidy it up.
 
-### Constructor Injection
+#### Constructor Injection
 
 ~~~
 public class ShoppingLogic
@@ -196,7 +192,7 @@ class Program
 
 
 
-### Setter Injection
+#### Setter Injection
 
 ~~~
 public class ShoppingLogic
@@ -235,7 +231,7 @@ class Program
 
 
 
-### Method Injection
+#### Method Injection
 
 To specify the service as a parameter.
 
@@ -268,9 +264,9 @@ public class ShoppingLogic
 
 
 
-# Singleton Pattern
+## Singleton Pattern
 
-### Good to know
+#### Good to know
 
 A singleton is a class which only allows one instance of itself to be created - and gives simple, easy access to said instance. Usually we will define logging class with singleton pattern.
 
@@ -286,7 +282,7 @@ Most commonly, singletons don't allow any parameters to be specified when creati
 
 
 
-### Sample 1 - Not Thread-safe
+#### Sample 1 - Not Thread-safe
 
 Bad code! Don't use this version.
 
@@ -313,7 +309,7 @@ public sealed class Singleton1
 
 
 
-### Sample 2 - Simple Thread-safe
+#### Sample 2 - Simple Thread-safe
 
 ~~~
 public sealed class Singleton
@@ -342,7 +338,7 @@ public sealed class Singleton
 
 
 
-### Sample 3 - Attempted thread-safety
+#### Sample 3 - Attempted thread-safety
 
 using double-check locking. Bad code! Don't use this version.
 
@@ -385,7 +381,7 @@ Unfortunately, there are four downsides to the pattern:
 
 
 
-### Sample 4 - Not quite as lazy
+#### Sample 4 - Not quite as lazy
 
 But thread-safe without using locks.
 
@@ -422,7 +418,7 @@ One shortcut you can take with this implementation (and only this one) is to jus
 
 
 
-### Sample 5 - Full Lazy Instantiation
+#### Sample 5 - Full Lazy Instantiation
 
 ~~~
 public sealed class Singleton
@@ -445,7 +441,7 @@ Here, instantiation is triggered by the first reference to the static member of 
 
 
 
-### Sample 6 - Using Lazy<T> in .NET 4
+#### Sample 6 - Using Lazy<T> in .NET 4
 
 ~~~
 public sealed class Singleton
@@ -464,9 +460,9 @@ public sealed class Singleton
 
 
 
-# Strategic Pattern
+## Strategic Pattern
 
-### Good to know
+#### Good to know
 
 Strategy pattern defines a family of algorithms, encapsulates each one of them and makes them interchangeable.
 
@@ -480,7 +476,7 @@ Strategy pattern defines a family of algorithms, encapsulates each one of them a
 
 ![](/img/coding/strategic_pattern_02.png)
 
-### Sample
+#### Sample
 
 - Define strategies.
 
@@ -565,9 +561,9 @@ class Program
 
 
 
-# Factory Pattern
+## Factory Pattern
 
-### Good to know
+#### Good to know
 
 - Defined an interface or abstract class to allow it’s sub-class to determine what kind of object need to be instantiate. The instantiate process is involved in sub-class.
 - Create different type in different circumstance
@@ -585,7 +581,7 @@ class Program
 
 
 
-### Simple (static) Factory
+#### Simple (static) Factory
 
 **Disadvantage** - Not flexible. Need to hardcode the type. So need to update the class once new type comes in.
 
@@ -763,7 +759,7 @@ class Program
 
 
 
-### Abstract Factory
+#### Abstract Factory
 
 Define an interface which will create families of related or dependent objects. In simple words, interface will expose multiple methods each of which will create some object. Again, here method return types will be generic interfaces. All these objects will together become part of some important functionality.
 
@@ -951,7 +947,7 @@ class Program
 
 
 
-### Reflection Factory
+#### Reflection Factory
 
 Reflection factory allows you to implement Factory Pattern in a more concise way (less code).
 
