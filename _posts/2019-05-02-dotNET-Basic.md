@@ -70,7 +70,7 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 		
     public class Human : ITalk
 		{
-		public void Talk() { }
+		    public void Talk() { }
 		
 			// need to implement MoveForward() too
 		}
@@ -93,8 +93,6 @@ Photo by [Markus Spiske](https://unsplash.com/photos/xekxE_VR0Ec?utm_source=unsp
 	    void MoveForward();
 	}
 	```
-	
-	
 	
 	```
 	public abstract class Object
