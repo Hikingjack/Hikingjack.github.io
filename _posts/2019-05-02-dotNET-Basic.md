@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Some essential C# Questions
+title:      Some Essential C# Questions
 subtitle:   What I usually ask and I had been asked
 date:       2019-05-02
 author:     madranger
